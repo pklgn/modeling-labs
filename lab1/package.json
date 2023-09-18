@@ -1,0 +1,15 @@
+{
+    "name": "2048-game-with-docker",
+    "version": "1.0.0",
+    "description": "First time using docker with node.js",
+    "author": "John Doe <john.doe@example.com>",
+    "main": "server.js",
+    "scripts": {
+      "start": "node server.js"
+    },
+    "dependencies": {
+      "http": "*",
+      "fs": "*",
+      "url": "*"
+    }
+  }
