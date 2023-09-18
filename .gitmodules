@@ -1,0 +1,3 @@
+[submodule "lab1/2048-game"]
+	path = lab1/2048-game
+	url = https://github.com/bradymadden97/2048-game
