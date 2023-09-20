@@ -2,11 +2,7 @@ FROM node:18
 
 WORKDIR /src/app
 
-COPY package.json ./
-
-RUN npm install
-
-COPY . /src/app/
+COPY ./2048-game /src/app/
 
 EXPOSE 8080
 
