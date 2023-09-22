@@ -8,7 +8,8 @@ $EXPOSED_PORT = 8080
 # Check if the Docker image exists
 if (!(docker images $DOCKER_IMAGE | Select-String -Quiet $DOCKER_IMAGE)) {
     Write-Host "Image $DOCKER_IMAGE not found. Building image..."
-    docker build . -t $DOCKER_IMAGE
+    docker build -t "$($DOCKER_IMAGE):v1.0" -t "$($DOCKER_IMAGE):v1.1" .
+    docker tag "$($DOCKER_IMAGE):v1.1" "$($DOCKER_IMAGE):latest"
 }
 
 # Check and start the first container
